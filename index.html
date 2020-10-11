@@ -1,257 +1,186 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="areapig.io" content="width=device-width, initial-scale=1.0">
-<title>areuapig.io</title>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-* {
-  box-sizing: border-box;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 42%; min-width: 200px;max-width: 200px;}
-.col-6 {width: 50%;}
-.col-7 {width: 58%;}
-.col-8 {width: 66.66%;}
-.col-9 {position:fixed; width: 100%; margin-left: 200px; overflow:hidden;display: flex;}
-.col-10 {position:fixed; width: 100%; margin-left: 10%; overflow:hidden;display: flex;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
-
-body {
-  background-image: url("1.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-
-}
-#head img{
-  float: left;
-  width: 85px;
-    padding:0.7%;;
-}
-
-    #head img:hover{
-        opacity: 0.5;
-    }
-
-
-header {
-  background-color: #333333;
-  background-image: url("bg.jpg");
-  background-size:20%;
-  background-repeat: no-repeat;
-  background-position: right center;
-  text-align: center;
-  font-size: 120%;
-  color: white;
-  overflow: visible;
-  min-width:800px;
-}
-    
-section {
-  content: "";
-  display: table;
-  clear: both;
-  padding: 20px;
-}
-    
-#HeaderUl {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  width: 600px;  
-}
-    
-#HeaderUl li{
-    float: left;
-    
-    }
-    
-#HeaderUl li a{
-        display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-  transition: background-color 1s;
-    }
-    
-#HeaderUl li a:hover{
-        background-color: #111111;
-    transition: background-color 1s;
-    }
-
-    
-    
-.listcontent{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  max-width: 250px;
-  min-width: 160px;
-
- 
-}
-.listcontent img{
-        
-        float: left;
-        width: 33px;
-        padding-right:10px;;
-    }
-    
-.listcontent li  {
-        padding-bottom: 10px; 
-    }
-    
-.listcontent li a {
-  border-radius: 25px;
-  display: block;
-  color: #888;
-  padding: 8px 16px;
-  text-decoration: none;
-  background: rgb(240,240,240,0.5);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
-  transition: background-color 1s;
-}
-.listcontent li a.active {
-  background-color: rgb(10,100,75,0.4);
-  color: white;
-}
-
-.listcontent li a:hover:not(.active) {
-    
-  background-color: rgb(100,100,100,0.3);
-  transition: background-color 1s;
-}
-    
-.logo div.gallery {
-  height: 500px;
-  border-radius: 0px 0px 25px 25px;
-  background-color: rgb(250, 250, 250,0.5);
-    
-}
-
-.logo div.gallery:hover {
-  background-image: linear-gradient(rgb(50, 0, 0,0), rgb(255, 0, 0,1));
-  color:white;
-  transform: background-image 1s;
-}
-
-.logo div.gallery img {
-
-  width: 100%;
-    min-width: 110px;
-  height: auto;
-}
-
-.logo div.desc {
-  padding: 15px 15px;
-  text-align: center;
-}
-
-
-.responsive {
-  margin-left: 3%;
-  padding: 0px 5px;
-  float:left;
-  width: 120px;
-    
-  
-}
-
-
-
-    
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
 </style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-</head>
-    
-<body>
-<header id="head">
-    <nav>
-        <img src="bobi1.jpg" alt="areapig" >
-        <ul id="HeaderUl">
-              <li><a href="2.html">Introduce</a></li>
-        </ul>
-    </nav>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>AREU<br>APIGG</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PICTURE</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">TEXT</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">GIF</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">AREUAPIG</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
 </header>
-    
-<section style=" width: 100%;overflow:hidden">
 
-<div class="col-5">
-  <nav>
-    <ul class ="listcontent">
-      <li><a class="active" href="index.html">
-          <img src="sign_self.png" alt="Self" >
-          areaupig
-          </a>
-        </li>
-  <li><a href="news.html">
-      <img src="sign_new.png" alt="News" >
-      News
-      </a>
-        </li>
-  <li><a href="hobby.html">
-      <img src="sign_love.png" alt="Hobby" >
-      Hobby
-      </a>
-        </li>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
   
-    </ul>
-  </nav>
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="4.jpg" style="width:100%" onclick="onClick(this)" alt="TRUMP's beautiful life">  
+    </div>
+    <div class="w3-third">
+      <img src="2.jpg" style="width:100%" onclick="onClick(this)" alt="TRUMP's beautiful life2">    
     </div>
     
-  <div class="col-9">
+    <div class="w3-third">
+      <img src="3.jpg" style="width:100%" onclick="onClick(this)" alt="TRUMP's beautiful life3">
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">&laquo;</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">&raquo;</a>
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>CLICK THIS PICTURE!</b></h4>
+    <div class="col-9">
       <div class="col-10">
-    <div class="logo responsive">
-  <div class="gallery">
-    <a target="_blank" href="logo_1.png">
-      <img src="2.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <div class="desc">First</div>
+    <img src="bobi2.jpg" alt="bobi2" usemap="#bobi2" width="700" height="700">
+
+<map name="bobi2">
+  <area title="Samoyed" shape="poly" coords="333,115,314,189,299,336,396,370,480,345,466,131,395,103"  alt="Samoyed" href="https://en.wikipedia.org/wiki/Samoyed_(dog)">
+  <area title="Alaskan Malamute" shape="poly" coords="248,126,180,162,193,188,188,241,192,281,208,304,204,350,290,354,303,223,303,139"   alt="Alaskan Malamute" href="https://en.wikipedia.org/wiki/Alaskan_Malamute">
+  <area title="Husky" shape="poly" coords="152,129,189,192,177,271,201,326,194,356,131,368,20,343,33,207,75,169"  alt="Husky" href="https://en.wikipedia.org/wiki/Husky">
+</map>
   </div>
 </div>
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>SENTENCE</h4>
+      <p>Life is full of confusing and disordering Particular time,a particular location,Do the arranged thing of ten million time in the brain,Step by step ,the life is hard to avoid delicacy and stiffness No enthusiasm forever,No unexpected happening of surprising and pleasing So,only silently ask myself in mind Next happiness,when will come?
+     人生的纷纷扰扰，杂杂乱乱，在一个特定的时间，特定的地点，做脑海中安排了千万遍的事，一步一骤，人生难免精致，却也死板，永远没有激情，没有意料之外的惊喜。于是，也只有在心里默默地问：下一班幸福，几点开？
+          Dark light,just light each other.The responsibility that you and my shoulders take together,the such as one dust covers up.Afraid only afraid the light is suddenly put out in theendless dark night and Countless loneliness
 
+　　暗黄的灯光，仅仅也只能照射过彼此。你、我肩上共同担当的责任，犹如一片灰尘遮掩。怕只怕灯丝的突然熄灭在这无尽的黑夜。数不尽的孤单。
+      </p>
+      <p>mail: 1853597099@qq.com</p>
+      <p>tel: 15821250026</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Personal evaluation</h4>
+      <p class="w3-wide">Beauty</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">ability</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide">charm</p>
+      <div class="w3-white">
+        <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>
+      </div>
+      <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+      <hr class="w3-opacity">
 
-<div class=" logo responsive">
-  <div class="gallery">
-    <a target="_blank" href="3.jpg">
-      <img src="3.jpg" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Second</div>
-  </div>
-</div>
-
-<div class=" logo responsive">
-  <div class="gallery">
-    <a target="_blank" href="4.jpg">
-      <img src="4.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Third</div>
-  </div>
-</div>
-
-
+      <h4 class="w3-padding-16">DO U LIKE THIS CSS?</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+            <li class="w3-padding-16">
+              <h2>YESSS!</h2>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">You really have a vision</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+            
+            <li class="w3-padding-16">
+              <h2>I Know U really like this
+              
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large">YEAHH</button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+
+  <!-- GIF section -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="1.gif" style="width:100%" onclick="onClick(this)" alt="KISS">  
+    </div>
+    <div class="w3-third">
+      <img src="5.gif" style="width:100%" onclick="onClick(this)" alt="DANCE">    
+    </div>
     
-</section>
+    <div class="w3-third">
+      <img src="4.gif" style="width:100%" onclick="onClick(this)" alt="SIT DOWN">
+    </div>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
 </body>
 </html>
